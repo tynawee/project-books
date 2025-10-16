@@ -1,0 +1,91 @@
+body {
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+#login,
+#logout,
+#back {
+    background-color: saddlebrown;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    border: 2px solid #4a230b;
+    border-radius: 20px;
+}
+
+#login:hover,
+#logout:hover {
+    background-color: #4a230b;
+    cursor: pointer;
+}
+
+form {
+    text-align: center;
+}
+
+#form-log,
+#form-reg {
+    background-color: saddlebrown;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 10px;
+    border: 2px solid #4a230b;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#form-log:hover,
+#form-reg:hover {
+    background-color: #4a230b;
+    cursor: pointer;
+}
+
+#link-log,
+#link-reg {
+    text-decoration: none;
+    color: #4a230b;
+}
+
+#update,
+#delete {
+    background-color: saddlebrown;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #4a230b;
+}
+
+#update:hover,
+#delete:hover {
+    background-color: #4a230b;
+    cursor: pointer;
+}
+
+#history {
+    text-decoration: none;
+    border: 1px solid #4a230b;
+    color: #4a230b;
+}
+
+#history:hover {
+    border: 1px solid saddlebrown;
+    color: saddlebrown;
+    cursor: pointer;
+}
+
+#create {
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0px 20px;
+}
+
+#create:hover {
+    background-color: #3c1f0a;
+    color: white;
+    border: 2px solid white;
+}
