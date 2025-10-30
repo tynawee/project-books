@@ -19,6 +19,7 @@
     <?php if (isset($bookAuthors[$book['id']])): ?>
         <?php foreach ($bookAuthors[$book['id']] as $author): ?>
             <p><?=$author['name']?></p>
+            <a href="/admin/<?=$book['id']?>/delAuthor/<?=$author['id']?>">Открепить автора</a>
         <?php endforeach; ?>
     <?php endif; ?>
 

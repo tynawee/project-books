@@ -14,7 +14,6 @@ use Src\middleware\AuthMiddleware;
 require __DIR__ . '/vendor/autoload.php';
 session_start();
 
-$app = AppFactory::create();
 $container = new Container();
 AppFactory::setContainer($container);
 $app = AppFactory::create();
@@ -45,6 +44,7 @@ $app->get('/', function (Request $request, Response $response) {
         $app->get('/admin/authors', [AuthorsController::class, 'authors']);
 
         $app->post('/admin/{id}/addAuthor', [AuthorsController::class, 'addAuthor']);
+        $app->get('/admin/{id}/delAuthor/{author_id}',[AuthorsController::class, 'delAuthor']);
 
         $app->get('/admin/{book_id}/createHistory', [BooksController::class, 'createHistory']);
         $app->post('/admin/createHistory', [BooksController::class, 'storeHistory']);

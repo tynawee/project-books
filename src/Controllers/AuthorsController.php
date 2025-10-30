@@ -81,4 +81,17 @@ class AuthorsController extends Controller
 
         return $response->withHeader('Location', '/admin/books')->withStatus(302);
     }
+
+    public function delAuthor(RequestInterface $request, ResponseInterface $response, $args)
+    {
+        $bookId = $args['id'];
+        $authorId = $args['author_id'];
+
+        \ORM::forTable('author_book')
+            ->where('book_id', $bookId)
+            ->where('author_id', $authorId)
+            ->deleteMany();
+
+        return $response->withHeader('Location', '/admin/books')->withStatus(302);
+    }
 }
